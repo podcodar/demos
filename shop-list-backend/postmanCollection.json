@@ -1,0 +1,98 @@
+{
+  "info": {
+    "_postman_id": "4cf2a5bc-e767-4a39-b6c2-bee57f579272",
+    "name": "ShopList",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Items",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{DEV_HOST}}/items",
+          "host": ["{{DEV_HOST}}"],
+          "path": ["items"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Item",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{DEV_HOST}}/items/3",
+          "host": ["{{DEV_HOST}}"],
+          "path": ["items", "3"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Item",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"description\": \"Queijo\",\n    \"quantity\": 1,\n    \"unit\": \"kg\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{DEV_HOST}}/items",
+          "host": ["{{DEV_HOST}}"],
+          "path": ["items"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Item",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{DEV_HOST}}/items/3",
+          "host": ["{{DEV_HOST}}"],
+          "path": ["items", "3"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Item",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"quantity\": 20\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{DEV_HOST}}/items/3",
+          "host": ["{{DEV_HOST}}"],
+          "path": ["items", "3"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "DEV_HOST",
+      "value": "http://127.0.0.1:3000"
+    }
+  ]
+}

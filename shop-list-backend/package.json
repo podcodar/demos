@@ -1,0 +1,25 @@
+{
+  "name": "shop-list-backend",
+  "version": "1.0.0",
+  "description": "Api for PodCodar ShopList project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified yet\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "author": "Cassios Marques",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
